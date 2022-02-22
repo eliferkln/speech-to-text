@@ -1,0 +1,31 @@
+
+body {
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.form-control {
+    background-color: gainsboro;
+    margin: 0;
+    width: 400px;
+}
+.form-group{
+ 
+    text-align: center;
+}
+
+
+.btn   {
+    background-color: #444451;
+    border-radius: 2px;
+    padding: 12px 28px;
+    text-align: center;
+    cursor: pointer;
+
+}
