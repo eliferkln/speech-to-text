@@ -29,3 +29,11 @@ body {
     cursor: pointer;
 
 }
+canvas {
+    position: absolute;
+   
+  }
+
+  video {
+      padding-top: 395px;
+  }

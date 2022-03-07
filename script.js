@@ -56,3 +56,24 @@ textbox.on('input', function() {
  content = $(this).val()
 
 })
+
+function downloadLogFile() {
+  const a = document.createElement('a');
+  a.href = 'data:text/plain,' + encodeURIComponent(document.getElementById('textbox').value);
+
+  var now = new window.Date();
+  var Year = now.getFullYear();
+  var Month = (("0" + (now.getMonth() + 1)).slice(-2));
+  var Date = ("0" + now.getDate()).slice(-2);
+  var Hour = ("0" + now.getHours()).slice(-2);
+  var Min = ("0" + now.getMinutes()).slice(-2);
+  var Sec = ("0" + now.getSeconds()).slice(-2);
+
+  a.download = 'log_' + Year + Month + Date + '_' + Hour + Min + Sec + '.txt';
+
+  a.click();
+}
+
+
+
+
